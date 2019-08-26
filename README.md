@@ -22,7 +22,44 @@ Click on bookmark links and see they are updated in bookmarks page
 
 Project detail
 --------------
+This application has both apis and the UI
 
+Following apis are mocked using module "node-server"
+
+/bookmarks
+	GET- returns all the stored bookmarks
+	POST - stores the bookmarks
+	
+/drivers
+	GET - fetches all the drivers
+
+/races
+	GET - fetches all the races
+	
+/authenticate
+	POST - Matches the username/password and returns the dummy token
+	
+
+UI Layer is built using React, React router, redux, material ui
+Folders
+
+api - Consists of all apis which invokes the mock apis and returns the promise
+
+components - Following components builds the netire application
+	App
+		Application Root component which wraps the entire application with themeProvider, Router, cssbaseline
+	common
+		Consists common componets Spinner, Icons, PrivateRoute - checks for login before any route
+	login
+		Login page
+	drivers
+		DriverPage - Components to display driver details. Built using material ui components
+	races
+		RacesPage - Components to display race details. Built using material ui components
+	bookmarks
+		BookmarksPage - Displays stored bookmarks
+		BookmarkLink - Stores the boomark
+Technology choices
 React - UI library to handle the routes and render the components
 Redux - UI state management
 materialUI - Ready to use accessible responsive react components
@@ -33,21 +70,4 @@ ServiceWorker - caches the images and reserves
 themes - Implemented using materialUI them provider
 json-server - To mock apis
 localstorage - to store language and loggedinuser
-jest, enzyme - the default of create-react-app for unit testing
-	
-ABC racing company demo has  3 main routes to view hte content
-/login
-	Rendered by Components/Login
-	Logsin the  user
-/drivers
-	Rendered by Components/drivers/DriverPage
-	Displays al lthe drivers of racing company
-	Each driver can be bookmarked
-/races
-	Rendered by Components/races/RacePage
-	Displays hte history of races
-	Each race can be bookmarked
-
-/bookmarks
-	Rendered by Components/bookmarks/BookmarkPage
-	Displays al lthe bookmarks of loggedin user
+jest, enzyme - the default of create-react-app for unit testing	
