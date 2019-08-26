@@ -6,7 +6,6 @@ import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
-import { Button } from "@material-ui/core";
 import { withTranslation } from "react-i18next";
 import BookmarkLink from "../bookmarks/bookmarkLink";
 

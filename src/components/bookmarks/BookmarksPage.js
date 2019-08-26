@@ -4,7 +4,6 @@ import * as bookmarkActions from "../../redux/actions/bookamrkActions";
 import PropTypes from "prop-types";
 import { bindActionCreators } from "redux";
 import BookmarkList from "./BookmarkList";
-import { Redirect } from "react-router-dom";
 import Spinner from "../common/Spinner";
 import { toast } from "react-toastify";
 

@@ -7,7 +7,6 @@ import availableThemes from '../themes/themes';
 import { withTranslation } from 'react-i18next';
 import DriversPage from './drivers/DriversPage';
 import Header from './header/header';
-import PageNotFound from './PageNotFound';
 import RacesPage from './races/RacesPage';
 import { PrivateRoute } from './common/PrivateRoute';
 import LoginPage from './login/LoginPage';
