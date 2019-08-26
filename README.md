@@ -16,6 +16,10 @@
 Starting dev or prod also starts the mock api server on port 3001 
 npm-run-all is used to trigger multiple comamnds in parallel
 Click on bookmark links and see they are updated in bookmarks page
+## Different themes and language urls
+Theme and translation is loaded based on language
+localhost:3001?lng=fr
+localhost:3001?lng=en
 
 # Project detail
 This application has both apis and the UI
@@ -48,15 +52,20 @@ Consists of all apis which invokes the mock apis and returns the promise
 	bookmarks 
 		- BookmarksPage - Displays stored bookmarks
 		- BookmarkLink - Stores the boomark
+## themes
+	Themes specific to langugaes are defined
+## i18n
+		Lanugae specific bundles are defined
+	
 ## Technology choices
-React - UI library to handle the routes and render the components
-Redux - UI state management
-materialUI - Ready to use accessible responsive react components
-		   - https://www.npmtrends.com/antd-vs-grommet-vs-material-ui
-		   - Good documentation, Javascript style sheet support, free templates and demos
-i18next - for loclaization
-ServiceWorker - caches the images and reserves
-themes - Implemented using materialUI them provider
-json-server - To mock apis
-localstorage - to store language and loggedinuser
-jest, enzyme - the default of create-react-app for unit testing	
+
+ - React - UI library to handle the routes and render the components
+ - Redux - UI state management
+ -  materialUI - Ready to use accessible  responsive react components
+   		   - https://www.npmtrends.com/antd-vs-grommet-vs-material-ui
+   		   - Good documentation, Javascript style sheet support, free templates and demos 
+   - i18next - for loclaization 
+   - ServiceWorker - caches the images and reserves themes - Implemented using materialUI themeprovider
+   -  json-server - To mock apis
+   -  localstorage - to store language and logged in user 
+	- Unit tests - jest, enzyme - the default of create-react-app for  unit testing
