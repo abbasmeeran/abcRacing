@@ -80,7 +80,9 @@ Application is built using the following Components
 	 
 - i18next - for loclaization 
 - ServiceWorker
-	- caches the images and reserves themes - Implemented using materialUI themeprovider
+	- caches the images and serves onconsequent requests
+- themes
+	- Implemented using materialUI themeprovider
 -  json-server
 	- Wrapper on express to mock apis from predefined mockData
 - localstorage  
